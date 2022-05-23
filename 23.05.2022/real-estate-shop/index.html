@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="first-part-header">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-4">
+                        <ul class="list-inline d-flex justify-content-around mt-2">
+                            <li class="list-inline-item"> <a href="#" class="fw-bold me-4 text-decoration-none"> <i
+                                        class="fa-solid fa-envelope me-2"></i> info@webmail.com </a></li>
+                            <li class="list-inline-item"> <a href="#" class="fw-bold text-decoration-none"> <i
+                                        class="fa-solid fa-location-pin me-2"></i> 15/A, Nest Tower, NYC </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 d-flex">
+                        <ul class="list-inline d-flex text-light mt-2">
+                            <li class="list-inline-item"> <a href="#"><i
+                                        class="fa-brands fa-facebook-f text-light me-3 fs-6"></i></a> </li>
+                            <li class="list-inline-item"> <a href="#"><i
+                                        class="fa-brands fa-twitter text-light me-3 fs-6"></i></a> </li>
+                            <li class="list-inline-item"><a href="#"><i
+                                        class="fa-brands fa-instagram text-light me-3 fs-6"></i></a> </li>
+                            <li class="list-inline-item"> <a href="#"> <i
+                                        class="fab fa-dribbble text-light me-3 fs-6"></i> </a> </li>
+                        </ul>
+                        <a href="#" class="text-light text-decoration-none pt-2 px-4 ms-4 fw-bold"
+                            id="add-listing-btn">Add Listing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-part-header mt-4">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-2 mt-2">
+                        <img src="https://tunatheme.com/tf/html/quarter-preview/quarter/img/logo.png" alt="">
+                    </div>
+                    <div class="nav col-6 ms-5">
+                        <nav>
+                            <ul class="nav mt-2">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-content-size" href="#">Home+</a>
+                                    <div class="hover-list mt-3">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 1</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 2</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 3</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 4</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 5</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 6</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 7</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 8</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 9</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Home Style 10</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-content-size" href="#">About+</a>
+                                    <div class="hover-list mt-3">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Services</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-content-size" href="#">Shop+</a>
+                                    <div class="hover-list">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Shop</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Shop Grid</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Shop Left
+                                                    Sidebar</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Shop Right
+                                                    Sidebar</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Shop Details</a>
+                                            </li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">Other Pages >></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-content-size" href="#">News+</a>
+                                    <div class="hover-list">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">News</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">News Grid</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">News Left
+                                                    Sidebar</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">News Right
+                                                    Sidebar</a></li>
+                                            <li class="mb-4"><a href="#" class="text-decoration-none">News Details</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-content-size" href="#">Pages+</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-content-size" href="#">Contact+</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-2 header-icons d-flex justify-content-around me-5 mb-1">
+                        <a href="#" class="px-3 shadow"><i class="fa-solid fa-magnifying-glass mt-3"></i></a>
+                        <a href="#" class="px-3 shadow"><i class="fa-solid fa-face-frown mt-3"></i></a>
+                        <a href="#" class="px-3 shadow"><i class="fa-solid fa-cart-shopping mt-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home-shop">
+            <div class="container-fluid main d-flex pb-5">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-12 m-5">
+                            <h1 class="fw-bold m-4">Shop</h1>
+                            <ul class="d-flex">
+                                <li class="me-2"> <a href="#" class="text-decoration-none fw-bold"> <i
+                                            class="fa-solid fa-house"></i> Home</a></li>
+                                <li class="me-2"><i class="fa-solid fa-angle-right"></i></li>
+                                <li class="me-2 fw-bold">Shop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="homes" class="mt-5">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-md-7 me-3">
+                        <div class="sorting d-flex justify-content-start mt-3">
+                            <i class="fa-brands fa-windows me-5 fs-3 menu-icons"></i>
+                            <i class="fa-solid fa-bars me-5 fs-3 menu-icons"></i>
+                            <div class="default-sorting border border-secondary me-5">
+                                <button class="list-group-item w-100 sorting-btn">Default Sorting</button>
+                                <div class="sorting-list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Default Sorting</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Sort by Popularity</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Sort by new arrivals</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Sort by price: low to high</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Sort by price: high to low</a></li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                            <div class="per-page border border-secondary">
+                                <button class="list-group-item w-100 per-page-btn">Per Page: 12</button>
+                                <div class="per-page-list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Per Page: 12</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Per Page: 15</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Per Page: 20</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Per Page: 25</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Per Page: 30</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search m-5 d-flex">
+                            <input type="text" class="p-3" placeholder="search your keyword..."
+                                aria-describedby="button-addon2">
+                            <button id="button-addon2" class="p-2 btn" type="button"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="home-cards">
+                            <div class="container-fluid">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="home-card shadow-sm">
+                                            <div class="image">
+                                                <img src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/product-3/1.jpg"
+                                                    alt="">
+                                                <div class="mini-photo rounded-circle">
+                                                    <a href="#"><img class="rounded-circle border border-3"
+                                                            src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/blog/author.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="home-card-content p-1 border-bottom mt-4">
+                                                <h5>For Rent</h5>
+                                                <h4 class="fw-bold mb-3"><a href="#" class="text-decoration-none">New
+                                                        Apartment Nice View</a></h4>
+                                                <a href="#" class="text-decoration-none location-a"><i
+                                                        class="fa-solid fa-location-pin"></i> Belmont Gardens,
+                                                    Chicago</a>
+                                                <ul class="list-inline mt-3">
+                                                    <li class="list-inline-item">3 Bed</li>
+                                                    <li class="list-inline-item">2 Bath</li>
+                                                    <li class="list-inline-item">3450 Square Ft</li>
+                                                </ul>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-heart"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-circle-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-card-price ps-3 pb-2 pt-4">
+                                                <p><span class="fw-bold">$34,900/</span> Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="home-card shadow-sm">
+                                            <div class="image">
+                                                <img src="	https://maelectrics.com/tf/html/quarter-preview/quarter/img/product-3/2.jpg"
+                                                    alt="">
+                                                <div class="mini-photo rounded-circle">
+                                                    <a href="#"><img class="rounded-circle border border-3"
+                                                            src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/blog/author.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="home-card-content p-1 border-bottom mt-4">
+                                                <h5>For Rent</h5>
+                                                <h4 class="fw-bold mb-3"><a href="#" class="text-decoration-none">New
+                                                        Apartment Nice View</a></h4>
+                                                <a href="#" class="text-decoration-none location-a"><i
+                                                        class="fa-solid fa-location-pin"></i> Belmont Gardens,
+                                                    Chicago</a>
+                                                <ul class="list-inline mt-3">
+                                                    <li class="list-inline-item">3 Bed</li>
+                                                    <li class="list-inline-item">2 Bath</li>
+                                                    <li class="list-inline-item">3450 Square Ft</li>
+                                                </ul>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-heart"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-circle-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-card-price ps-3 pb-2 pt-4">
+                                                <p><span class="fw-bold">$34,900/</span> Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="home-card shadow-sm">
+                                            <div class="image">
+                                                <img src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/product-3/3.jpg"
+                                                    alt="">
+                                                <div class="mini-photo rounded-circle">
+                                                    <a href="#"><img class="rounded-circle border border-3"
+                                                            src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/blog/author.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="home-card-content p-1 border-bottom mt-4">
+                                                <h5>For Rent</h5>
+                                                <h4 class="fw-bold mb-3"><a href="#" class="text-decoration-none">New
+                                                        Apartment Nice View</a></h4>
+                                                <a href="#" class="text-decoration-none location-a"><i
+                                                        class="fa-solid fa-location-pin"></i> Belmont Gardens,
+                                                    Chicago</a>
+                                                <ul class="list-inline mt-3">
+                                                    <li class="list-inline-item">3 Bed</li>
+                                                    <li class="list-inline-item">2 Bath</li>
+                                                    <li class="list-inline-item">3450 Square Ft</li>
+                                                </ul>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-heart"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-circle-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-card-price ps-3 pb-2 pt-4">
+                                                <p><span class="fw-bold">$34,900/</span> Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="home-card shadow-sm">
+                                            <div class="image">
+                                                <img src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/product-3/4.jpg"
+                                                    alt="">
+                                                <div class="mini-photo rounded-circle">
+                                                    <a href="#"><img class="rounded-circle border border-3"
+                                                            src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/blog/author.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="home-card-content p-1 border-bottom mt-4">
+                                                <h5>For Rent</h5>
+                                                <h4 class="fw-bold mb-3"><a href="#" class="text-decoration-none">New
+                                                        Apartment Nice View</a></h4>
+                                                <a href="#" class="text-decoration-none location-a"><i
+                                                        class="fa-solid fa-location-pin"></i> Belmont Gardens,
+                                                    Chicago</a>
+                                                <ul class="list-inline mt-3">
+                                                    <li class="list-inline-item">3 Bed</li>
+                                                    <li class="list-inline-item">2 Bath</li>
+                                                    <li class="list-inline-item">3450 Square Ft</li>
+                                                </ul>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-heart"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-circle-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-card-price ps-3 pb-2 pt-4">
+                                                <p><span class="fw-bold">$34,900/</span> Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="home-card shadow-sm">
+                                            <div class="image">
+                                                <img src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/product-3/5.jpg"
+                                                    alt="">
+                                                <div class="mini-photo rounded-circle">
+                                                    <a href="#"><img class="rounded-circle border border-3"
+                                                            src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/blog/author.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="home-card-content p-1 border-bottom mt-4">
+                                                <h5>For Rent</h5>
+                                                <h4 class="fw-bold mb-3"><a href="#" class="text-decoration-none">New
+                                                        Apartment Nice View</a></h4>
+                                                <a href="#" class="text-decoration-none location-a"><i
+                                                        class="fa-solid fa-location-pin"></i> Belmont Gardens,
+                                                    Chicago</a>
+                                                <ul class="list-inline mt-3">
+                                                    <li class="list-inline-item">3 Bed</li>
+                                                    <li class="list-inline-item">2 Bath</li>
+                                                    <li class="list-inline-item">3450 Square Ft</li>
+                                                </ul>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-heart"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-circle-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-card-price ps-3 pb-2 pt-4">
+                                                <p><span class="fw-bold">$34,900/</span> Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="home-card shadow-sm">
+                                            <div class="image">
+                                                <img src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/product-3/6.jpg"
+                                                    alt="">
+                                                <div class="mini-photo rounded-circle">
+                                                    <a href="#"><img class="rounded-circle border border-3"
+                                                            src="https://maelectrics.com/tf/html/quarter-preview/quarter/img/blog/author.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="home-card-content p-1 border-bottom mt-4">
+                                                <h5>For Sale</h5>
+                                                <h4 class="fw-bold mb-3"><a href="#" class="text-decoration-none">New
+                                                        Apartment Nice View</a></h4>
+                                                <a href="#" class="text-decoration-none location-a"><i
+                                                        class="fa-solid fa-location-pin"></i> Belmont Gardens,
+                                                    Chicago</a>
+                                                <ul class="list-inline mt-3">
+                                                    <li class="list-inline-item">3 Bed</li>
+                                                    <li class="list-inline-item">2 Bath</li>
+                                                    <li class="list-inline-item">3450 Square Ft</li>
+                                                </ul>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-heart"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#"><i
+                                                                class="fa-solid fa-circle-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="home-card-price ps-3 pb-2 pt-4">
+                                                <p><span class="fw-bold">$34,900/</span> Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-count my-5">
+                            <ul class="list-inline d-flex justify-content-center">
+                                <li class="list-inline-item"><a class="text-decoration-none" href="#"><<</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none" href="#">1</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none" href="#">2</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none" href="#">3</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none" href="#">...</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none" href="#">10</a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none" href="#">>></a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="information-content">
+                            <h3 class="fw-bold">Advance Information</h3>
+                            <p>About 9,620 results (0.62 seconds)</p>
+                        </div>
+                        <div class="infos">
+                            <div class="property-type border-bottom">
+                                <h5 class="ms-3 fw-bold">Property Type</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="hause" id="hause" checked>
+                                                <label class="fw-bold" for="hause">Hause</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="single-family" id="single-family">
+                                                <label class="fw-bold" for="single-family">Single Family</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="apartment" id="apartment">
+                                                <label class="fw-bold" for="apartment">Apartment</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="office-villa" id="office-villa">
+                                                <label class="fw-bold" for="office-villa">Office Villa</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="luxary-home" id="luxary-home">
+                                                <label class="fw-bold" for="luxary-home">Luxary Home</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="studio" id="studio">
+                                                <label class="fw-bold" for="studio">Studio</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div class="amenities border-bottom mt-3">
+                                <h5 class="fw-bold ms-3">Amenities</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="hause" id="hause" checked>
+                                                <label class="fw-bold" for="hause">Hause</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="single-family" id="single-family">
+                                                <label class="fw-bold" for="single-family">Single Family</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="apartment" id="apartment">
+                                                <label class="fw-bold" for="apartment">Apartment</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="office-villa" id="office-villa">
+                                                <label class="fw-bold" for="office-villa">Office Villa</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="luxary-home" id="luxary-home">
+                                                <label class="fw-bold" for="luxary-home">Luxary Home</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="studio" id="studio">
+                                                <label class="fw-bold" for="studio">Studio</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div class="Price-range border-bottom mt-3">
+                                <h5 class="fw-bold ms-3">Price Range</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="hause" id="hause" checked>
+                                                <label class="fw-bold" for="hause">Hause</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="single-family" id="single-family">
+                                                <label class="fw-bold" for="single-family">Single Family</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="apartment" id="apartment">
+                                                <label class="fw-bold" for="apartment">Apartment</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-by-price border-bottom mt-3">
+                                <h5 class="fw-bold">Filter by Price</h5>
+                                <label for="customRange1" class="form-label">Your range</label>
+                                <input type="range" class="form-range" id="customRange1">
+                            </div>
+                            <div class="bed-bath border-bottom mt-3">
+                                <h5 class="fw-bold ms-3">Bed/Bath</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="hause" id="hause" checked>
+                                                <label class="fw-bold" for="hause">Hause</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="single-family" id="single-family">
+                                                <label class="fw-bold" for="single-family">Single Family</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="apartment" id="apartment">
+                                                <label class="fw-bold" for="apartment">Apartment</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="studio" id="studio">
+                                                <label class="fw-bold" for="studio">Studio</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div class="catagory mt-3">
+                                <h5 class="fw-bold ms-3">Catagory</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="hause" id="hause" checked>
+                                                <label class="fw-bold" for="hause">Hause</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="single-family" id="single-family">
+                                                <label class="fw-bold" for="single-family">Single Family</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="apartment" id="apartment">
+                                                <label class="fw-bold" for="apartment">Apartment</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                    <li><a href="#"
+                                            class="px-3 py-1 text-decoration-none d-flex justify-content-between">
+                                            <div class="property-input">
+                                                <input type="checkbox" name="studio" id="studio">
+                                                <label class="fw-bold" for="studio">Studio</label>
+                                            </div>
+                                            <span class="fw-bold">3,966</span>
+                                        </a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id=explore-properties>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7 d-flex justify-content-between mx-auto">
+                        <div class="explore-content">
+                            <h1 class="fw-bold text-light">Looking for a dream home?</h1>
+                            <p class="text-light">We can help you realize your dream of a new home</p>
+                        </div>
+                        <div class="explore-property">
+                            <a href="#">Explore Properties <i class="fa-solid fa-right-long"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-md-3 p-4">
+                        <div class="img-content">
+                            <img src="	https://tunatheme.com/tf/html/quarter-preview/quarter/img/logo-2.png" alt="">
+                            <p class="text-light mt-4">
+                                Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy
+                                text of the
+                                printing.
+                            </p>
+                        </div>
+                        <div class="address mt-3">
+                            <ul>
+                                <li class="text-light mb-3"><i class="fa-solid fa-location-dot"></i> Brooklyn, New York,
+                                    United States</li>
+                                <li class="text-light mb-3"> <i class="fa-solid fa-phone"></i>
+                                    <a href="#" class="text-decoration-none text-light">+0123-456789</a>
+                                </li>
+                                <li class="text-light mb-3"><i class="fa-solid fa-envelope"></i> <a href="#"
+                                        class="text-decoration-none text-light">example@example.com</a> </li>
+                                <li>
+                                    <ul class="list-inline text-light mt-2">
+                                        <li class="list-inline-item"> <a href="#"><i
+                                                    class="fa-brands fa-facebook-f text-light me-1 fs-6"></i></a> </li>
+                                        <li class="list-inline-item"> <a href="#"><i
+                                                    class="fa-brands fa-twitter text-light me-1 fs-6"></i></a> </li>
+                                        <li class="list-inline-item"><a href="#"><i
+                                                    class="fa-brands fa-instagram text-light me-1 fs-6"></i></a> </li>
+                                        <li class="list-inline-item"> <a href="#"> <i
+                                                    class="fab fa-dribbble text-light me-1 fs-6"></i> </a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6 footer-menu d-flex justify-content-around p-4">
+                        <div class="col-md-4 text-light">
+                            <h4 class="fw-bold">Company</h4>
+                            <ul class="footer-list">
+                                <li>About</li>
+                                <li>Blog</li>
+                                <li>All Products</li>
+                                <li>Location Map</li>
+                                <li>FAQ</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 text-light">
+                            <h4 class="fw-bold">Services</h4>
+                            <ul class="footer-list">
+                                <li>Order tracking</li>
+                                <li>Wish List</li>
+                                <li>Login</li>
+                                <li>My accaunt</li>
+                                <li>Terms & Conditions</li>
+                                <li>Promotional Offers</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 text-light">
+                            <h4 class="fw-bold">Customer Care</h4>
+                            <ul class="footer-list">
+                                <li>Login</li>
+                                <li>My Accaunt</li>
+                                <li>Wish List</li>
+                                <li>Order Tracking</li>
+                                <li>FAQ</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-3 p-4">
+                        <div class="newsletter text-light">
+                            <h4 class="fw-bold">Newsletter</h4>
+                            <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
+                        </div>
+                        <div class="email">
+                            <form action="#">
+                                <input type="email" name="email" placeholder="Email">
+                                <div class="email-btn d-inline">
+                                    <button type="submit" class="px-4"><i
+                                            class="fa-solid fa-location-arrow"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="we-accept mt-5">
+                            <h4 class="fw-bold text-light mb-4">We Accept</h4>
+                            <img src="https://tunatheme.com/tf/html/quarter-preview/quarter/img/icons/payment-4.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="the-end d-flex justify-content-between p-3">
+            <div class="company-2022 pt-3 ps-5">
+                <p class="text-light">All Rights Reserved @ Company 2022</p>
+            </div>
+            <div class="privacy pt-3 pe-5">
+                <ul class="d-flex">
+                    <li class="me-4 fw-bold"><a href="" class="text-decoration-none ">Terms & Conditions</a></li>
+                    <li class="me-4 fw-bold"><a href="" class="text-decoration-none">Claim</a></li>
+                    <li class="fw-bold"> <a href="" class="text-decoration-none ">Privacy & Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
